@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: #e5f2fa;
+    color: #333;
+}
+/* HEADER */
+header {
+    background: #0061cf;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #333;
+}
+/* HOME SECTION */
+.home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c8dbfc;
+}
+.home-box h1 {
+    font-size: 42px;
+    color: #03368d;
+    font-weight: bold;
+    padding: 40px;
+    text-align: center;
+}
+.home-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center; 
+    margin-top: 10px;
+    
+    
+}
+.home-text p {
+    text-align: left;
+    font-size: 18px;
+    color: #111;
+    line-height: 1.6;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    
+    
+}
+.home-img {
+    background: #9e9e9e;
+    margin-left: 100px;
+    padding: 8px;
+    border-radius: 15px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    width:75%;
+    height:100%;
+}
+button {
+    display: block;
+    width:250px;
+    padding: 12px 25px;
+    background: #008af4;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    
+    
+}
+button:hover {
+    background: #005494;
+    
+}
+/* Choose-Pet */
+.choose-pet {
+    min-height: 90vh;
+    padding: 60px 40px;
+    background-color: #8bb5fd;
+    text-align: center;
+}
+.choose-pet h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    color:#023c84;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 15px;
+}
+.choose-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;              
+    padding: 10px;
+}
+.box{
+    display: block;
+    width: 220px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #006dc0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+.box img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+
+}
+.choose-boxes button{
+    width: 140px;
+    padding: 12px 25px;
+    background: #008af4;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 31px;
+    margin-top: 15px;
+
+}
+.choose-boxes button:hover{
+    background: #005494;
+}
+/* SERVICES */
+.services {
+    padding: 40px 20px;
+    background-color: #d0e3ff;
+    text-align: center;
+}
+.service h2{
+    font-size: 42px;
+    color: #03368d;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+.service p{
+    width: 85%;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+}
+.service-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    margin-top: 40px;
+}
+.service-col p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #023c84;
+    text-align: center;
+    padding: 5px;
+}
+.service-col img{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    border-radius: 15px;
+}
+/* WHY CHOOSE US */
+.choose-us{
+    padding: 60px 40px;
+    text-align: center;
+    background: #a0c2fc;
+}
+.why h2{
+    font-size: 42px;
+    color: #03368d;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+.why h3{
+    font-size: 35px;
+    color: #008af4;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    
+}
+.why p{
+    width: 85%;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+}
+.why-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    align-items: center; 
+    margin-top: 40px;
+    
+
+}
+.why-point h2{
+    font-size: 25px;
+    color: #03368d;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+}
+.why-img{
+    background: #9e9e9e;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    
+}
+.why-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.why-point h3{
+    text-align: left;
+    font-size: 17px;
+    color: #111;
+    line-height: 1.6;
+    padding-left: 40px;
+}
+.why-point p{
+    text-align: left;
+    font-size: 16px;
+    color: #111;
+    line-height: 1.6;
+    padding-left: 40px;
+}
+/* ABOUT */
+.container{
+    background: #5ca6ff;
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    height: 85%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    margin: auto;
+    
+    
+    
+}
+.container h2{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    
+}
+.col-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center; 
+    text-align: center;  
+    padding-left: 10px;
+}
+.col h3{
+    font-size: 20px;
+    color: #fff9b6;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    
+}
+.col p{
+    font-size: 18px;
+    color: #fffcf0;
+    text-align: center;
+    padding: 10px;
+}
+.col-img{
+    width: 28%;
+    height: 28%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+.about {
+    background: #cae5ff;
+    padding: 60px 40px;
+    text-align: center;
+}
+.abo h2{
+    font-size: 42px;
+    color: #03368d;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+.abo p {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+}
+/* CONTACT */
+.contact {
+    padding: 60px 40px;
+    text-align: center;
+    background: #6da2ff;
+}
+.contact h2{
+    font-size: 42px;
+    color: #03368d;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+
+}
+.contact p{
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    padding: 15px;
+    color: #ffefe3;
+}
+.contact h3{
+    font-size: 30px;
+    color: #1e47fc;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+}
+.contact-box{
+    background: #cadbff;
+    display: flex;
+    width: 70%;
+    gap: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 30px;
+}
+.Appointment{
+    background-color: #fff;
+    width: 500px;
+    padding: 25px;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.Appointment h3{
+    font-size: 30px;
+    color: #1e47fc;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.Appointment input,
+.Appointment textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.Appointment button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3ms;
+    background-color: #008af4;
+    margin: auto;
+}
+.Appointment button :hover{
+    background: #055498;
+}
+.online-help{
+    background-color: #fff;
+    width: 500px;
+    padding: 30px;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.online-help p{
+    color: #111;
+    width: auto;
+    margin-bottom: 20px;
+}
+.help-btn{
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3ms;
+    background-color: #008af4;
+    color: #fff;
+    margin: auto;
+}
+.help-btn:hover {
+  background: #055498;
+}
+.contact-box button{
+    width: 65%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3ms;
+    background-color: #008af4;
+    margin: auto;
+}
+/* FOOTER */
+footer {
+    background: #0061cf;
+    text-align: center;
+    padding: 40px 40px ;
+}
+.foot h3{
+   font-size: 28px;
+    color: #eff5ff;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px; 
+}
+.foot p{
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    padding: 15px;
+    color: rgb(255, 236, 130);
+}
+.foot-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 220px;
+    margin-right: 220px;
+    padding: 15px;
+}
+.footer-box h4{
+    font-size: 20px;
+    color: palevioletred;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+.footer-box p{
+    width: 70%;
+    margin: auto;
+    font-size: 17px;
+    padding: 5px;
+    color: rgb(245, 245, 243);
+}
+.footer-box a{
+    width: 70%;
+    margin: auto;
+    font-size: 17px;
+    padding: 5px;
+    color: rgb(245, 245, 243);
+    transition: 0.3ms;
+}
+.footer-box a:hover {
+  color: #7ab5f0;
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid pink;
+  color: rgb(255, 230, 0);
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
