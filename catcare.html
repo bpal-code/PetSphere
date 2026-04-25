@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Care | PetSphere</title>
+    <link rel="stylesheet" href="care.css">
+</head>
+<body>
+<!-- HEADER -->
+<header>
+    <div class="logo">PetSphere - Cat Care 💕</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#vet">Vets</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+        <span class="cart" onclick="location.href='cart.html'">🛒 Cart (<span id="cart-count">0</span>)</span>
+    </nav>
+</header>
+<!-- HOME -->
+<section class="home" id="home">
+    <div class="home-text">
+        <h1>Complete Cat Care Services</h1>
+        <h2>Caring for cats, the way they love</h2>
+        <p>Our Cat Care services provide gentle, specialized treatment in a calm, stress-free environment.From routine checkups to advanced care, your cat’s health is our priority.</p>
+        <div class="home-box">
+        <div class="home1">
+        <img src="https://allcareveterinarynetwork.com/uploads/SiteAssets/0/images/services-acvn/kitten-vet-atlanta.jpg" alt="img" class="home-img">   
+        <button onclick="document.getElementById('services').scrollIntoView()">Explore Services</button>
+        </div>
+        <div class="home1">
+        <img src="https://thumbs.dreamstime.com/b/cute-white-kitten-sitting-pink-background-cute-white-kitten-sitting-pink-background-kitten-has-sad-388840357.jpg" alt="img" class="home-img">   
+        <button onclick="location.href='cat.html'">Know More About Your Cat</button>
+        </div>
+</div>
+ </div>
+</section>
+<!-- CAT SERVICES -->
+<section class="services" id="services">
+    <h2>Cat Services</h2>
+    <div class="service-boxes">
+        <div class="box">
+            <img src="https://www.shutterstock.com/image-photo/closeup-unrecognizable-pet-hairdresser-shaving-600nw-2378940219.jpg">
+            <h3>Grooming & Hygiene</h3>
+            <p>From gentle baths to coat trimming and nail care, we keep your cat clean, comfortable, and looking their best.</p>
+            <button onclick="location.href='index.html#contact'">Book Now</button>
+        </div>
+
+        <div class="box">
+            <img src="https://images.squarespace-cdn.com/content/v1/678db37f0131da670262f627/86c717f2-6305-448b-8714-d1956a9e91c2/woman-with-cat-jumping-through-arms.jpg">
+            <h3>Training & Behavior Support</h3>
+            <p>Positive, reward-based training to improve obedience, social skills, and emotional balance.</p>
+            <button onclick="location.href='index.html#contact'">Enroll</button>
+        </div>
+
+        <div class="box">
+            <img src="https://images.ctfassets.net/cmiwzf0cmbqh/12707eac-c8d2-44e1-b55a-9e07e3cc66df/4e6d908630be10644b220a6a79c3d2a3/ginger-cat-health-check.jpg">
+            <h3>Health Monitoring</h3>
+            <p>Regular health check-ins, vaccination reminders, and early symptom observation to keep your cat safe and active.</p>
+            <button onclick="location.href='index.html#contact'">Consult</button>
+        </div>
+
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0JTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D">
+            <h3>Daily Care & Companionship</h3>
+            <p>Reliable daily care including walking, playtime, and emotional bonding—because cats need love, not just routines.</p>
+            <button onclick="location.href='index.html#contact'">Schedule</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxiGywacIUQgKF0AUe1n5vJTfqnyAwyr6TMw&s">
+            <h3>Home Boarding & Sitting</h3>
+            <p>A safe, stress-free home environment when you’re away, ensuring your cat feels secure and cared for.</p>
+            <button onclick="location.href='index.html#contact'">Schedule</button>
+        </div>
+        <div class="box">
+            <img src="https://media.istockphoto.com/id/1496614278/photo/young-woman-feeding-her-cat-at-home.jpg?s=612x612&w=0&k=20&c=vtGd_0aYS2N-JZbmjWInxfFnhPwBpl6Z2KbywwyZy48=">
+            <h3>Nutrition & Feeding Care</h3>
+            <p>Personalized meal plans designed for your cat’s age, breed, and health needs to ensure balanced nutrition and strong immunity.</p>
+            <button onclick="location.href='index.html#contact'">Schedule</button>
+        </div>
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/man-headset-smile-laptop-house-customer-service-online-advice-help-client-mature-person-man-headset-smile-401375527.jpg">
+            <h3>Online & Offline Consultation</h3>
+            <p>24/7 expert guidance for cat parents—get advice anytime, whether at home or in person.</p>
+            <button onclick="location.href='index.html#contact'">Schedule</button>
+        </div>
+        <div class="box">
+            <img src="https://www.shutterstock.com/image-photo/sterilization-cat-veterinary-surgery-bonfire-600nw-1462766609.jpg">
+            <h3>Emergency Support Guidance</h3>
+            <p>Quick response assistance and guidance during urgent situations until professional help arrives.</p>
+            <button onclick="location.href='index.html#contact'">Schedule</button>
+        </div>
+    </div>
+</section>
+<!-- VET SECTION -->
+<section class="vet-section" id="vet">
+    <h2>Our Specialists</h2>
+    <div class="hospital-box">
+        <img src="https://media.istockphoto.com/id/1419057255/vector/icon-with-pets-and-love-heart.jpg?s=612x612&w=0&k=20&c=CRj50Pe1eaioxfXwE0AkA5yXAxM1Her0YP6SslpTenM=">
+        <div class="hospital-info">
+            <h3>Paws & Care Veterinary Clinic</h3>
+            <p>
+                Specialized pet hospital with modern equipment,
+                 24 hours emergency care, and experienced veterinarians.Immediate treatment and continuous monitoring to protect your pet’s life when every second counts.
+            </p>
+
+            <div class="hospital-services">
+                <span>Vaccination</span>
+                <span>Regular Checkup</span>
+                <span>Surgery</span>
+                <span>Emergency Care</span>
+                <span>Dental</span>
+            </div>
+             <button onclick="location.href='index.html#contact'">Book Appointment</button>
+        </div>
+    </div>
+    <div class="hospital-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWxwfO0K6ZCEqAiJ2mpdujDMKJWUfMlxf1NA&s">
+        <div class="hospital-info">
+            <h3>Happy Pets Hospital</h3>
+            <p>
+                 Happy Pets Hospital offers expert care for dogs, cats, birds, fish, rabbit and small animals.
+From vaccinations to emergency services, 24/7 Emergency Care with experienced veterinarians and quick response for critical situations.
+            </p>
+
+            <div class="hospital-services">
+                <span>Vaccination</span>
+                <span>Regular Checkup</span>
+                <span>Surgery</span>
+                <span>Emergency Care</span>
+                <span>Dental</span>
+            </div>
+             <button onclick="location.href='index.html#contact'">Book Appointment</button>
+        </div>
+    </div>
+
+    <div class="vet-doctors">
+        <div class="doctor-card">
+            <img src="https://img.freepik.com/premium-photo/portrait-smiling-doctor-against-white-background_1048944-13871176.jpg?semt=ais_hybrid&w=740&q=80">
+            <h3>Dr. Rahul Sen</h3>
+            <p>General Vet & Preventive Care (10+ years of experience)</p>
+            <button onclick="location.href='index.html#contact'">Book Appointment</button>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0mi_C9pGoyQy9hSlJH8BkW7Ltt0Q4Qw82Q&s">
+            <h3>Dr. Ananya Roy</h3>
+            <p>Dog  & Cat Specialist and Canine Surgeon (8+ years of experience)</p>
+            <button onclick="location.href='index.html#contact'">Book Appointment</button>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvEH9UDCn1LJl3X6yjml3xFnYW2RMiOxH-bg&s">
+            <h3>Dr. Arjun Mehta</h3>
+            <p>Dermatology & Nutrition (Qualified BVSc & AH veterinarian)</p>
+            <button onclick="location.href='index.html#contact'">Book Appointment</button>
+        </div>
+    </div>
+</section>
+<!-- SHOP -->
+<section class="shop" id="shop">
+    <h2>Cat Essentials Shop</h2>
+
+    <div class="shop-items">
+        <div class="item">
+            <img src="https://img.freepik.com/free-photo/still-life-pets-food-assortment_23-2148982371.jpg">
+            <h3>Food & Nutrition</h3>
+            <button class="add-to-cart" data-name="Food & Nutrition" data-animal="Cat" data-price="499">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="https://goofytails.com/cdn/shop/collections/Cat_Treats_and_Chews.jpg?v=1749712126">
+            <h3>Treats & Chews</h3>
+            <button button class="add-to-cart" data-name="Treats & Chews" data-animal="Cat" data-price="299">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="https://thumbs.dreamstime.com/b/blue-background-variety-cat-grooming-tools-heads-scene-playful-cute-349401404.jpg">
+            <h3>Grooming Accessories</h3>
+            <button button class="add-to-cart" data-name="Grooming Accessories" data-animal="Cat" data-price="599">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/pet-collar-harness/v/x/i/small-cat-leash-with-harness-for-small-cat-and-dog-riyuzone-original-imah25fffnm6g6az.jpeg?q=90">
+            <h3>Collars & Leashes</h3>
+            <button button class="add-to-cart" data-name="Collars & Leashes" data-animal="Cat" data-price="259">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://images.meesho.com/images/products/322288092/uwpsz_512.webp?width=512">
+            <h3>Bedding & Comfort</h3>
+            <button button class="add-to-cart" data-name="Bedding & Comfort" data-animal="Cat" data-price="399">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://i5.walmartimages.com/asr/42f47ca0-0895-4697-a81f-7c388f949929.916839038cc8c5d87afa8397626641f6.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF">
+            <h3>Toys & Entertainment</h3>
+            <button button class="add-to-cart" data-name="Toys & Entertainment" data-animal="Cat" data-price="199">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/free-photo/pink-pet-bag-arrangement_23-2148982405.jpg?semt=ais_hybrid&w=740&q=80">
+            <h3>Travel & Outdoor</h3>
+            <button button class="add-to-cart" data-name="Travel & Outdoor" data-animal="Cat" data-price="999">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://thumbs.dreamstime.com/b/red-cat-looking-curious-to-medicine-capsules-table-399430499.jpg">
+            <h3>Medicines & Healthcare</h3>
+            <button button class="add-to-cart" data-name="Medicines & Healthcare" data-animal="Cat" data-price="979">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://t3.ftcdn.net/jpg/00/49/45/20/360_F_49452009_qYeJLO1VAIiKbzxv9DxyqXYPDD1ON2C3.jpg">
+            <h3>Clothing & Fashion</h3>
+            <button button class="add-to-cart" data-name="Clothing & Fashion" data-animal="Cat" data-price="359">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://thumbs.dreamstime.com/b/vibrant-assortment-colorful-cat-toys-accessories-orange-background-including-food-bowl-grooming-scissors-playful-356633498.jpg">
+            <h3>Feeding Accessories</h3>
+            <button button class="add-to-cart" data-name="Feeding Accessories" data-animal="Cat" data-price="599">Add to Cart</button>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="foot">
+      <h3>PetSphere </h3>
+      <p>Your trusted place for pet care, grooming, and health support.</p>
+      </div>
+      <div class="foot-box">
+      <div class="footer-box">
+      <h4>Quick Links</h4>
+        <p><a href="index.html#home">Home</a></p>
+        <p><a href="index.html#pets">Choose Pet</a></p>
+        <p><a href="index.html#contact">Contact</a></p>
+      </div>
+      <div class="footer-box">
+      <h4>Contact Us</h4>
+      <p>📞 +91 12345 67890</p>
+      <p>📧 petsphere@gmail.com</p>
+      <p>📍 India</p>
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <p>© PetSphere | Designed by Banisa</p>
+  </div>
+</section>
+<script src="cart.js"></script>
+</body>
+</html>

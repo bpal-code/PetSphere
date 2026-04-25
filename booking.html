@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointments | PetSphere</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<header>
+    <div class="logo">PetSphere</div>
+    <nav>
+        <a href="dogcare.html">Dog</a>
+        <a href="catcare.html">Cat</a>
+        <a href="birdcare.html">Bird</a>
+        <a href="fishcare.html">Fish</a>
+        <a href="rabbitcare.html">Rabbit</a>
+    </nav>
+</header>
+
+<section class="appointments">
+    <h2>My Booked Appointments</h2>
+    <div id="appointmentList"></div>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+</section>
+<script>
+  let bookings = JSON.parse(localStorage.getItem("appointments")) || [];
+  let box = document.getElementById("appointmentList");
+
+  if (bookings.length === 0) {
+    box.innerHTML = "No bookings yet";
+  }
+
+  bookings.forEach((b, i) => {
+    box.innerHTML += `
+      <p>
+        ${i + 1}. 
+        ${b.name} |
+        ${b.email} |
+        ${b.phone} |
+        ${b.pet} |
+        ${b.date} |
+        ${b.time}
+        <button onclick="removeBooking(${i})">Cancel</button>
+      </p>
+    `;
+  });
+
+  function removeBooking(index) {
+    bookings.splice(index, 1);
+    localStorage.setItem("appointments", JSON.stringify(bookings));
+    location.reload();
+  }
+</script>
+
+
+</body>
+</html>
